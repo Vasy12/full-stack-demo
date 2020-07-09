@@ -9,9 +9,11 @@ function createApp() {
   app.use( express.static( 'public' ) );
 
   app.use( '/api', router );
+
   app.use( (err, req, res, next) => {
     res.send( err );
   } );
+
   return app;
 }
 

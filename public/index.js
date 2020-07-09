@@ -3,7 +3,7 @@
 window.addEventListener( 'load', render );
 document.getElementById( 'refreshBtn' ).addEventListener( 'click', render );
 
-const BASE_URL = 'http://192.168.1.148:3000/api/';
+const BASE_URL = 'https://fc-full-stack-demo.herokuapp.com/api/';
 const userName = prompt( 'Your name' ) || 'anonymous';
 const msgFormElem = document.getElementById( 'msgForm' );
 const msgInputElem = document.getElementById( 'msgInput' );
